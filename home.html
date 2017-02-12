@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<script src="jquery.min.js"></script>
+<script src="smooth.js"></script>
+<link rel="stylesheet" type="text/css" media="not screen and (max-width: 768px)" href="style.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 320px)" href="style_320.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 321px) and (max-width: 768px)" href="style_768.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+<div class="landing">
+	<div class="landing_bg"></div>
+	<div class="landing_shape"></div>
+</div>
+<div class="menu">
+	<img class="menu_logo" src="img/logo.svg">
+	<div class="num_link">
+		<a href="01.html">01</a>　<a href="02.html">02</a>　<a href="03.html">03</a>　<a href="04.html">04</a>
+	</div>
+</div>
+
+<div class="content">
+	<img class="index01_bg" src="img/little_circles.svg"/>
+	<div class="index01">
+		<img class="index01_img" src="img/01.png"/>
+		<div class="animate1"></div>
+		<div class="animate2"></div>
+		<div class="animate3"></div>
+	</div>
+	<div class="index02">
+		<div class="index02_word"><span>SHAPE Magazine</span> is an experimental zine about some different shapes in our environment or just around you and me. It's also about design, art and life. There are four topics, including circle, rectangle, mountain and sea. Take a look and enjoy them!</div>
+		<div class="mags"><a href="01.html"><img src="img/cover/cover_01.png"></a><a href="02.html"><img src="img/cover/cover_02.png"></a><a href="03.html"><img src="img/cover/cover_03.png"></a><a href="04.html"><img src="img/cover/cover_04.png"></div></a>
+		<div class="animate4"></div>
+		<div class="animate5"></div>
+		<div class="animate6"></div>
+		<div class="animate7"></div>
+	</div>
+	<img class="bottom_img" src="img/bottom_bg.png"/>
+</div>
+
+<script>
+
+$(document).ready(function () {
+	// logo to top
+	$('.menu_logo').on('click', function() {
+		$('html, body').animate({ scrollTop: 0 }, 500);
+	});
+	$('.animate7').on('click', function() {
+		$('html, body').animate({ scrollTop: 0 }, 500);
+	});	
+	// fixed nav
+    var menu = $('.menu');
+    var origOffsetY = menu.offset().top;
+    function scroll() {
+        if ($(window).scrollTop() >= origOffsetY) {
+            $('.menu').addClass('sticky');
+            $('.num_link').addClass('num_sticky');
+            $('.content').addClass('menu-padding');
+			$('.menu_logo').fadeIn('fast', function() {
+				$(this).addClass('logo_appear');
+			});
+		} else {
+            $('.menu').removeClass('sticky');
+            $('.content').removeClass('menu-padding');
+            $('.num_link').removeClass('num_sticky');
+			$('.menu_logo').fadeOut('fast', function() {
+				$(this).removeClass('logo_appear');
+			});
+		}
+	}
+    document.onscroll = scroll;
+	
+	// fade in
+    $(window).scroll( function(){
+        $('.index01_img').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 500;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+				$(this).animate({'opacity':'1'},1000);    
+            }            
+        }); 
+		$('.index02_word').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+				$(this).animate({'opacity':'1'},1500);    
+            }            
+        }); 
+		$('.mags').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()-200;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+				$(this).animate({'opacity':'1','margin-top':'82vh'},1000);  
+            }            
+        }); 
+	});
+});
+
+if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 80;
+    else if (event.detail) delta = -event.detail / 200;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+var goUp = true;
+var end = null;
+var interval = null;
+
+function handle(delta) {
+	var animationInterval = 18; //lower is faster
+  var scrollSpeed = 18; //lower is faster
+
+	if (end == null) {
+  	end = $(window).scrollTop();
+  }
+  end -= 20 * delta;
+  goUp = delta > 0;
+
+  if (interval == null) {
+    interval = setInterval(function () {
+      var scrollTop = $(window).scrollTop();
+      var step = Math.round((end - scrollTop) / scrollSpeed);
+      if (scrollTop <= 0 || 
+          scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
+          goUp && step > -1 || 
+          !goUp && step < 1 ) {
+        clearInterval(interval);
+        interval = null;
+        end = null;
+      }
+      $(window).scrollTop(scrollTop + step );
+    }, animationInterval);
+  }
+}
+
+</script>
+</body>
+</html>
