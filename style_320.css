@@ -99,6 +99,7 @@ body {
 	display: none;
 }
 .index01_img {
+	display: none;
     opacity: 0;
 	z-index: 7;
 	position: absolute;
