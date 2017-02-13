@@ -4,7 +4,7 @@
 <script src="smooth.js"></script>
 <link rel="stylesheet" type="text/css" media="not screen and (max-width: 768px)" href="style.css">
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 320px)" href="style_320.css" />
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 321px) and (max-width: 768px)" href="style_768css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 321px) and (max-width: 768px)" href="style_768.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 
@@ -86,14 +86,27 @@ $(document).ready(function () {
 				$(this).animate({'opacity':'1'},1500);    
             }            
         }); 
-		$('.mags').each( function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight()-200;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-				$(this).animate({'opacity':'1','margin-top':'82vh'},1000);  
-            }            
-        }); 
+
+		if ($(window).width() > 768) { 		
+			$('.mags').each( function(i){
+				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-200;
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				if( bottom_of_window > bottom_of_object ){
+					$(this).animate({'opacity':'1','margin-top':'82vh'},1000);  
+				}            
+			}); 
+		}  
+		else if ($(window).width() <= 320) {  
+			$('.mags').each( function(i){
+				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-800;
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				if( bottom_of_window > bottom_of_object ){
+					$(this).animate({'opacity':'1','margin-top':'70%'},1000);  
+				}            
+			}); 
+		}  		
 	});
+   
 });
 
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
