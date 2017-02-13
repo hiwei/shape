@@ -89,7 +89,9 @@ body {
 	z-index: 2;
 	background: #fff;
 	font-family : Quicksand;
-	font-size: 1.2%;
+	font-size: 1rem;
+	width: 80%;
+	margin-left: 16%; 
 	padding: 2%;
 }
 .float_text_bold {
@@ -168,72 +170,70 @@ body {
 }
 .float_img2 {
 	position: absolute;
-	top: 250%;
+	top: 150%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img3 {
 	position: absolute;
-	top: 400%;
+	top: 300%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img4 {
 	position: absolute;
-	top: 750%;
+	top: 600%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img5 {
 	position: absolute;
-	top: 900%;
+	top: 750%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img6 {
 	position: absolute;
-	top: 1050%;
+	top: 900%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img7 {
 	position: absolute;
-	top: 1250%;
+	top: 1050%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img8 {
 	position: absolute;
-	top: 1400%;
+	top: 1200%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img9 {
 	position: absolute;
-	top: 1550%;
+	top: 1350%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_img10 {
 	position: absolute;
-	top: 1900%;
+	top: 1750%;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
 .float_text1 {
-	top: 600%;
-	width: 80%;
+	top: 450%;
 }
 .float_text2 {
-	top: 1750%;
-	width: 80%;
+	top: 1500%;
 }
