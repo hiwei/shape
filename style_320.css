@@ -111,10 +111,10 @@ body {
 .index02 {
 	z-index: 9;
 	position: absolute;
-	top: 15%;
-	left: 15%;
+	top: 30%;
+	left: 10%;
 	background: none;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-family: Quicksand;
 	font-weight: 400;
 }
@@ -122,14 +122,14 @@ body {
     opacity: 0;
 	z-index: 11;
 	position: absolute;
-	width: 70%;
+	width: 80%;
 }
 .index02_word:after {
 	content: '';
 	display: block;
-	width: 4%;
+	width: 20px;
 	border-bottom: 5px solid #eee;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 .index02 span {
 	font-weight: 700;
@@ -137,13 +137,13 @@ body {
 .mags {
 	padding-top: 30%;
 	opacity: 0;
-	margin-top: 90%;
+	margin-top: 75%;
 	text-align: center;
 	margin-left: 0%;
 }
 .mags img {
 	display: block;
-	margin-left: 20%;
+	margin-left: 15%;
 	width: 60%;
 }
 .animate4 {
@@ -165,7 +165,6 @@ body {
 	right: 0;
 	width: 100%;
 }
-
 .menu_logo {
 	display: none;
 	z-index: 999;
