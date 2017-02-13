@@ -91,7 +91,7 @@ body {
 	font-family : Quicksand;
 	font-size: 1rem;
 	width: 80%;
-	margin-left: 16%; 
+	margin-left: 8%; 
 	padding: 2%;
 }
 .float_text_bold {
@@ -170,7 +170,7 @@ body {
 }
 .float_img2 {
 	position: absolute;
-	top: 150%;
+	top: 180%;
 	left: 0;
 	width: 100%;
 	height: auto;
@@ -226,7 +226,7 @@ body {
 }
 .float_img10 {
 	position: absolute;
-	top: 1750%;
+	top: 1650%;
 	left: 0;
 	width: 100%;
 	height: auto;
