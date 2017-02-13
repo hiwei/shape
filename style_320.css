@@ -171,39 +171,7 @@ body {
 	display: none;
 }
 .animate7 {
-	z-index: 11;
-	position: absolute;
-	width: 8%;
-    height: 8%;
-	top: 150%;
-	background: #eee;
-	-webkit-animation: example7 2.5s linear infinite;
-	-moz-animation: example7 2.5s linear infinite;
-	-o-animation: example7 2.5s linear infinite;
-    animation: example7 2.5s linear infinite;
-}
-.animate7:hover {
-	cursor: pointer;
-}
-@-webkit-keyframes example7 {
-    0% { opacity: 0.4; transform: rotate(0deg);}
-	50% { opacity: 1 }
-    100%  { opacity: 0.4; transform: rotate(360deg);}
-}
-@-moz-keyframes example7 {
-    0% { opacity: 0.4; transform: rotate(0deg);}
-	50% { opacity: 1 }
-    100%  { opacity: 0.4; transform: rotate(360deg);}
-}
-@-o-keyframes example7 {
-    0% { opacity: 0.4; transform: rotate(0deg);}
-	50% { opacity: 1 }
-    100%  { opacity: 0.4; transform: rotate(360deg);}
-}
-@keyframes example7 {
-    0% { opacity: 0.4; transform: rotate(0deg);}
-	50% { opacity: 1 }
-    100%  { opacity: 0.4; transform: rotate(360deg);}
+	display: none;
 }
 .bottom_img {
 	z-index: 4;
