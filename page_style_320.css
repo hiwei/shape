@@ -7,23 +7,22 @@ body {
 	overflow-x: hidden;
 }
 .menu {
-    position: fixed! important;
+    text-align:center;
+	width: 100%;
+	position: fixed! important;
 	background: #fff;
 	box-shadow: 0px 2px 15px #eee;
-	height: 10vh;
-    color:#555;
+	height: 10%;
+    color: #555;
     letter-spacing: 1px;
     width: 100%;
 	z-index: 999;
 	position: absolute;
 	top: 0;
 	left: 0; 
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	color: #555;
 	font-family : Montserrat;
-	font-size: 4.5vw;
+	font-size: 1rem;
     animation: menu 1.5s ease;
 }
 @-webkit-keyframes menu {
@@ -44,13 +43,15 @@ body {
 }
 .num_link {
 	position: absolute;
-	margin-left: 20vw;
+	margin-left: 45%;
+	margin-top: 5%;
 }
 .menu_logo {
 	z-index: 999;
 	position: absolute;
-	height: 6vw;
-	margin-left: -30vw;
+	width: 25%;
+	margin-top: 4%;
+	margin-left: -40%;
 }
 .menu_logo:hover {
 	cursor: pointer;
@@ -65,26 +66,20 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0; 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100vw;
-	height: 100vh;
 }
  .change_bg1, .change_bg2, .change_bg3, .change_bg4 {
 	position: absolute;
 	z-index: 3;
+	margin-top: 40%;
     position: fixed;
-	width: 100vw;
+	width: 100%;
 }
 .float_img {
 	z-index: 2;
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: flex;
 	width: 100%;
-	justify-content: center;
 }
 .img_shadow {
 	box-shadow: 0px 0px 20px #ddd;
@@ -94,20 +89,20 @@ body {
 	z-index: 2;
 	background: #fff;
 	font-family : Quicksand;
-	font-size: 1.2vw;
-	padding: 2vw;
+	font-size: 1.2%;
+	padding: 2%;
 }
 .float_text_bold {
 	font-weight: 700;
-	font-size: 2vw;
-	letter-spacing: 0.2vw;
+	font-size: 2%;
+	letter-spacing: 0.2%;
 }
 .float_bottom {
 	position: absolute;
 	z-index: -1;
-	top: 2100vh;
-	width: 100vw;
-	height: 20vh;
+	top: 2100%;
+	width: 100%;
+	height: 20%;
 	background: none;
 }
 .price_text {
@@ -115,25 +110,25 @@ body {
 	color: #000;
 	position: absolute;
 	position: fixed;
-	width: 100vw;
-	bottom: 16vh;
+	width: 100%;
+	bottom: 16%;
 	text-align: center;
 	font-family : Quicksand;
-	font-size: 5vw;
-	letter-spacing: 0.2vw;
+	font-size: 1.2rem;
+	letter-spacing: 0.2%;
 	z-index: 1;
 }
 .to_top {
     opacity: 0;
 	position: absolute;
 	position: fixed;
-	width: 100vw;
-	bottom: 6vh;
+	width: 100%;
+	bottom: 6%;
 	text-align: center;
 	font-family : Quicksand;
 	font-weight: 700;
 	color: #ddd;
-	font-size: 8vw;
+	font-size: 1.5rem;
 	z-index: 2;
 }
 .to_top span, .num_link span, .num_link a {
@@ -166,80 +161,79 @@ body {
 /* 01 02 03 04*/
 
 .float_img1 {
-	position: absolute;
-	top: 100vh;
+	margin-top: 200%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img2 {
 	position: absolute;
-	top: 250vh;
+	top: 250%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img3 {
 	position: absolute;
-	top: 400vh;
+	top: 400%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img4 {
 	position: absolute;
-	top: 750vh;
+	top: 750%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img5 {
 	position: absolute;
-	top: 900vh;
+	top: 900%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img6 {
 	position: absolute;
-	top: 1050vh;
+	top: 1050%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img7 {
 	position: absolute;
-	top: 1250vh;
+	top: 1250%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img8 {
 	position: absolute;
-	top: 1400vh;
+	top: 1400%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img9 {
 	position: absolute;
-	top: 1550vh;
+	top: 1550%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_img10 {
 	position: absolute;
-	top: 1900vh;
+	top: 1900%;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 .float_text1 {
-	top: 600vh;
-	width: 80vw;
+	top: 600%;
+	width: 80%;
 }
 .float_text2 {
-	top: 1750vh;
-	width: 80vw;
+	top: 1750%;
+	width: 80%;
 }
