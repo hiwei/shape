@@ -1,81 +1,84 @@
 .float_img1 {
-	position: absolute;
-	top: 110vh;
-	left: 10vw; 
-	margin: auto;
-	max-height: 250px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 150%;
+	float: right;
+	margin-right: 3%; 
+	width: 75%;
 }
 .float_img2 {
-	position: absolute;
-	top: 215vh;
-	right: -90vw; 
-	max-height: 300px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 100%;
+	float: left;
+	margin-left: 8%; 
+	width: 50%;
 }
 .float_img3 {
-	position: absolute;
-	top: 310vh;
-	left: 17vw; 
-	max-height: 220px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 100%;
+	float: left;
+	margin-left: 8%; 
+	width: 75%;
 }
 .float_img4 {
-	position: absolute;
-	top: 530vh;
-	left: 5vw; 
-	max-height: 250px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 120%;
+	float: right;
+	margin-right: 5%; 
+	width: 80%;
 }
 .float_img5 {
-	position: absolute;
-	top: 610vh;
-	right: -95vw; 
-	max-height: 250px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 300%;
+	float: left;
+	margin-left: 4%; 
+	width: 65%;
 }
 .float_img6 {
-	position: absolute;
-	top: 700vh;
-	left: 11vw; 
-	max-height: 400px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 100%;
+	float: right;
+	margin-right: 8%; 
+	width: 65%;
 }
 .float_img7 {
-	position: absolute;
-	top: 780vh;
-	right: -93vw; 
-	max-height: 280px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 120%;
+	float: left;
+	margin-left: 7%; 
+	width: 70%;
 }
 .float_img8 {
-	position: absolute;
-	top: 870vh;
-	left: 10vw; 
-	max-height: 300px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 200%;
+	float: left;
+	margin-left: 15%; 
+	width: 65%;
 }
 .float_img9 {
-	position: absolute;
-	top: 940vh;
-	right: -90vw; 
-	max-height: 320px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 150%;
+	float: right;
+	margin-right: 2%; 
+	width: 70%;
 }
 .float_img10 {
-	position: absolute;
-	top: 1180vh;
-	left: 8vw; 
-	max-height: 350px;
-	max-width: 100vw;
+	display: block;
+	margin-top: 160%;
+	float: left;
+	margin-left: 2%; 
+	width: 80%;
 }
 .float_text1 {
-	top: 450vh;
-	left: 25vw; 
-	width: 45vw;
+	display: block;
+	margin-top: 820%;
+	float: left;
+	margin-left: 15%; 
+	width: 65%;
 }
 .float_text2 {
-	top: 1080vh;
-	right: -80vw; 
-	width: 35vw;
+	display: block;
+	margin-top: 2200%;
+	float: left;
+	margin-left: 40%; 
+	width: 45%;
 }
