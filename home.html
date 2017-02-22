@@ -7,7 +7,6 @@
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 321px) and (max-width: 768px)" href="style_768.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
-
 <div class="landing">
 	<div class="landing_bg"></div>
 	<div class="landing_shape"></div>
@@ -20,21 +19,12 @@
 </div>
 
 <div class="content">
-	<img class="index01_bg" src="img/little_circles.svg"/>
 	<div class="index01">
 		<img class="index01_img" src="img/01.png"/>
-		<div class="animate1"></div>
-		<div class="animate2"></div>
-		<div class="animate3"></div>
-	</div>
-	<div class="index02">
 		<div class="index02_word"><span>SHAPE Magazine</span> is an experimental zine about some different shapes in our environment or just around you and me. It's also about design, art and life. There are four topics, including circle, rectangle, mountain and sea. Take a look and enjoy them!</div>
 		<div class="mags"><a href="01.html"><img src="img/cover/cover_01.png"></a><a href="02.html"><img src="img/cover/cover_02.png"></a><a href="03.html"><img src="img/cover/cover_03.png"></a><a href="04.html"><img src="img/cover/cover_04.png"></div></a>
-		<div class="animate4"></div>
-		<div class="animate5"></div>
-		<div class="animate6"></div>
-		<div class="animate7"></div>
 	</div>
+	<div class="gototop">↑</div>
 	<img class="bottom_img" src="img/bottom_bg.png"/>
 </div>
 
@@ -43,10 +33,10 @@
 $(document).ready(function () {
 	// logo to top
 	$('.menu_logo').on('click', function() {
-		$('html, body').animate({ scrollTop: 0 }, 500);
+		$('html, body').animate({ scrollTop: -20 }, 500);
 	});
-	$('.animate7').on('click', function() {
-		$('html, body').animate({ scrollTop: 0 }, 500);
+	$('.gototop').on('click', function() {
+		$('html, body').animate({ scrollTop: -20 }, 500);
 	});	
 	// fixed nav
     var menu = $('.menu');
@@ -56,6 +46,9 @@ $(document).ready(function () {
             $('.menu').addClass('sticky');
             $('.num_link').addClass('num_sticky');
             $('.content').addClass('menu-padding');
+			$('.gototop').fadeIn('slow', function() {
+				$(this).addClass('show');
+			});
 			$('.menu_logo').fadeIn('fast', function() {
 				$(this).addClass('logo_appear');
 			});
@@ -63,6 +56,9 @@ $(document).ready(function () {
             $('.menu').removeClass('sticky');
             $('.content').removeClass('menu-padding');
             $('.num_link').removeClass('num_sticky');
+			$('.gototop').fadeOut('fast', function() {
+				$(this).removeClass('show');
+			});
 			$('.menu_logo').fadeOut('fast', function() {
 				$(this).removeClass('logo_appear');
 			});
@@ -92,33 +88,44 @@ $(document).ready(function () {
 				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-200;
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
 				if( bottom_of_window > bottom_of_object ){
-					$(this).animate({'opacity':'1','margin-top':'82%'},1000);  
+					$(this).animate({'opacity':'1'},1000);  
 				}            
 			}); 
 		}  
-		else if ($(window).width() <= 768) {  
+		else if ( $(window).width() <= 768 && $(window).width() > 321) {  
 			$('.mags').each( function(i){
 				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-500;
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
 				if( bottom_of_window > bottom_of_object ){
-					$(this).animate({'opacity':'1','margin-top':'60%'},1000);  
+					$(this).animate({'opacity':'1','margin-top':'0%'},1000);  
 				}            
 			}); 
 		} 
 		else if ($(window).width() <= 320) {  
 			$('.mags').each( function(i){
-				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-1000;
-				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				var bottom_of_object = $(this).offset().top - $(window).height() / 1.5;
+				var bottom_of_window = $(window).scrollTop();
 				if( bottom_of_window > bottom_of_object ){
-					$(this).animate({'opacity':'1','margin-top':'70%'},1000);  
+					$(this).animate({'opacity':'1','margin-top':'20%'},1000);  
 				}            
 			}); 
-		} 
-		
+		}
 	});
-   
 });
 
+/*
+	function scroll() {
+		if ($(window).width() <= 320) {
+			if ($(window).scrollTop() >= $('.menu').offset().top) {
+				$('.gototop').animate({'opacity':'1'},1000);  
+			} else {
+				$('.gototop').animate({'opacity':'0'},1000);  
+			}
+		}
+	}
+	document.onscroll = scroll;
+});
+*/
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
