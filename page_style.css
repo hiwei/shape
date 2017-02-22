@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 	overflow-x: hidden;
+	width: 100%;
 }
 .menu {
     position: fixed! important;
 	background: #fff;
 	box-shadow: 0px 2px 15px #eee;
-	height: 10vh;
+	height: 10%;
     color:#555;
     letter-spacing:1px;
     width:100%;
@@ -23,17 +24,17 @@ body {
 	justify-content: center;
 	color: #555;
 	font-family : Montserrat;
-	font-size: 2vw;
+	font-size: 1.5rem;
 }
 .num_link {
 	position: absolute;
-	margin-left: 10vw;
+	margin-left: 15%;
 }
 .menu_logo {
 	z-index:999;
 	position: absolute;
-	height: 2.5vw;
-	margin-left: -20vw;
+	height: 50%;
+	margin-left: -20%;
 }
 .menu_logo:hover {
 	cursor: pointer;
@@ -41,25 +42,24 @@ body {
 .content {
 	z-index: 1;
 	position: absolute;
-	top: 0;
+	top: 0%;
 	left: 0; 
+    position: fixed;
+	background: none;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
-.circle_bg  {
-	position: absolute;
-	top: 0;
-	left: 0; 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100vw;
-	height: 100vh;
+.content div{
+	margin: auto;
+	width: 800px;
+	height: 20%;
 }
  .change_bg1, .change_bg2, .change_bg3, .change_bg4 {
+	top: 20%;
 	position: absolute;
-	z-index:3;
-    position:fixed;
-	max-height: 600px;
-	max-width: 100vw;
+	z-index: 3;
+	width: 800px;
 }
 .float_img {
 	z-index: 2;
@@ -75,20 +75,19 @@ body {
 	z-index: 2;
 	background: #fff;
 	font-family : Quicksand;
-	font-size: 1.2vw;
-	padding: 2vw;
+	font-size: 1.5rem;
+	padding: 20px;
 }
 .float_text_bold {
 	font-weight: 700;
-	font-size: 2vw;
-	letter-spacing: 0.2vw;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
 }
 .float_bottom {
 	position: absolute;
 	z-index: 2;
-	top: 1300vh;
 	width: 100px;
-	height: 20vh;
+	height: 12%;
 	background: none;
 }
 .price_text {
@@ -96,25 +95,25 @@ body {
 	color: #000;
 	position: absolute;
 	position: fixed;
-	width: 100vw;
-	bottom: 13vh;
+	width: 100%;
+	bottom: 13%;
 	text-align: center;
 	font-family : Quicksand;
-	font-size: 2vw;
-	letter-spacing: 0.2vw;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
 	z-index: 1;
 }
 .to_top {
     opacity: 0;
 	position: absolute;
 	position: fixed;
-	width: 100vw;
-	bottom: 6vh;
+	width: 100%;
+	bottom: 6%;
 	text-align: center;
 	font-family : Quicksand;
 	font-weight: 700;
 	color: #ddd;
-	font-size: 2vw;
+	font-size: 2.5rem;
 	z-index: 2;
 }
 .to_top span, .num_link span, .num_link a {
