@@ -43,10 +43,13 @@ body {
 }
 .num_link {
 	position: absolute;
-	margin-left: 45%;
+	width: 100%;
+	text-align: center;
 	margin-top: 5%;
+	font-size: 1rem;
 }
 .menu_logo {
+	display: none;
 	z-index: 999;
 	position: absolute;
 	width: 25%;
@@ -59,19 +62,18 @@ body {
 .content {
 	z-index: 1;
 	position: absolute;
-	top: 0;
+	top: 0%;
 	left: 0; 
-}
-.circle_bg  {
-	position: absolute;
-	top: 0;
-	left: 0; 
+    position: fixed;
+	background: none;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
  .change_bg1, .change_bg2, .change_bg3, .change_bg4 {
+	top: 30%;
 	position: absolute;
 	z-index: 3;
-	margin-top: 40%;
-    position: fixed;
 	width: 100%;
 }
 .float_img {
@@ -79,32 +81,89 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
 }
 .img_shadow {
 	box-shadow: 0px 0px 20px #ddd;
 }
+.float_img1 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img2 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img3 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img4 {
+	display: block;
+	margin-top: 400%;
+	width: 100%;
+}
+.float_img5 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img6 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img7 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img8 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img9 {
+	display: block;
+	margin-top: 200%;
+	width: 100%;
+}
+.float_img10 {
+	display: block;
+	margin-top: 400%;
+	width: 100%;
+}
+
 .float_text {
 	position: absolute;
 	z-index: 2;
 	background: #fff;
 	font-family : Quicksand;
-	font-size: 1rem;
-	width: 80%;
-	margin-left: 8%; 
-	padding: 2%;
+	font-size: .8rem;
+	padding: 10%;
 }
 .float_text_bold {
 	font-weight: 700;
-	font-size: 2%;
-	letter-spacing: 0.2%;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+}
+.float_text1 {
+	display: block;
+	margin-top: 200%;
+	width: 80%;
+}
+.float_text2 {
+	margin-top: 200%;
+	display: block;
+	width: 80%;
 }
 .float_bottom {
 	position: absolute;
-	z-index: -1;
-	top: 2100%;
-	width: 100%;
-	height: 20%;
+	z-index: 2;
+	width: 100px;
+	height: 7%;
 	background: none;
 }
 .price_text {
@@ -113,11 +172,10 @@ body {
 	position: absolute;
 	position: fixed;
 	width: 100%;
-	bottom: 16%;
+	bottom: 17%;
 	text-align: center;
 	font-family : Quicksand;
-	font-size: 1.2rem;
-	letter-spacing: 0.2%;
+	font-size: 1rem;
 	z-index: 1;
 }
 .to_top {
@@ -130,7 +188,7 @@ body {
 	font-family : Quicksand;
 	font-weight: 700;
 	color: #ddd;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	z-index: 2;
 }
 .to_top span, .num_link span, .num_link a {
@@ -158,82 +216,4 @@ body {
 .num_link a:hover {
 	cursor: pointer;
 	color: #aaa;
-}
-
-/* 01 02 03 04*/
-
-.float_img1 {
-	margin-top: 200%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img2 {
-	position: absolute;
-	top: 180%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img3 {
-	position: absolute;
-	top: 300%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img4 {
-	position: absolute;
-	top: 600%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img5 {
-	position: absolute;
-	top: 750%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img6 {
-	position: absolute;
-	top: 900%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img7 {
-	position: absolute;
-	top: 1050%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img8 {
-	position: absolute;
-	top: 1200%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img9 {
-	position: absolute;
-	top: 1350%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_img10 {
-	position: absolute;
-	top: 1650%;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.float_text1 {
-	top: 450%;
-}
-.float_text2 {
-	top: 1500%;
 }
