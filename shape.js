@@ -7,30 +7,30 @@ $(document).ready(function () {
 	
 	// to top
 	$('.to_top span').on('click', function() {
-		$('html, body').animate({ scrollTop: 0 }, 1000);
+		$('html, body').animate({ scrollTop: -100 }, 1000);
 	});
 	$('.num_link span').on('click', function() {
-		$('html, body').animate({ scrollTop: 0 }, 1000);
+		$('html, body').animate({ scrollTop: -100 }, 1000);
 	});
 	
 	// img change
     function scroll() {
-        if ($(window).scrollTop() > 2000) {
+        if ($(window).scrollTop() > $('.float_img3').offset().top) {
 			$(".change_bg1").fadeOut(1000);
 		}
-		if ($(window).scrollTop() < 2000) {
+		if ($(window).scrollTop() < $('.float_img3').offset().top) {
 			$(".change_bg1").fadeIn(1000);
 		}
-        if ($(window).scrollTop() > 5000) {
+        if ($(window).scrollTop() > $('.float_img5').offset().top) {
 			$(".change_bg2").fadeOut(1000);
 		}
-		if ($(window).scrollTop() < 5000) {
+		if ($(window).scrollTop() < $('.float_img5').offset().top) {
 			$(".change_bg2").fadeIn(1000);
 		}
-		if ($(window).scrollTop() > 8000) {
+		if ($(window).scrollTop() > $('.float_img8').offset().top) {
 			$(".change_bg3").fadeOut(1000);
 		}
-		if ($(window).scrollTop() < 8000) {
+		if ($(window).scrollTop() < $('.float_img8').offset().top) {
 			$(".change_bg3").fadeIn(1000);
 		}
 	}
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     $(window).scroll( function(){
         $('.float_bottom').each( function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight()-500;
+            var bottom_of_object = $(document).height() - $(window).height();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
 				$('.price_text').animate({'opacity':'1'},1000);    
