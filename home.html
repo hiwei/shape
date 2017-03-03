@@ -2,9 +2,9 @@
 <html>
 <script src="jquery.min.js"></script>
 <script src="smooth.js"></script>
-<link rel="stylesheet" type="text/css" media="not screen and (max-width: 768px)" href="style.css">
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 320px)" href="style_320.css" />
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 321px) and (max-width: 768px)" href="style_768.css" />
+<link rel="stylesheet" type="text/css" media="not screen and (max-width: 1024px)" href="style.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="style_768.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 769px) and (max-width: 1024px)" href="style_1024.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 <div class="landing">
@@ -83,7 +83,7 @@ $(document).ready(function () {
             }            
         }); 
 
-		if ($(window).width() > 768) { 		
+		if ($(window).width() > 1024) { 		
 			$('.mags').each( function(i){
 				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-200;
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -92,16 +92,16 @@ $(document).ready(function () {
 				}            
 			}); 
 		}  
-		else if ( $(window).width() <= 768 && $(window).width() > 321) {  
+		else if ( $(window).width() <= 1024 && $(window).width() > 769) {  
 			$('.mags').each( function(i){
-				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-500;
-				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				var bottom_of_object = $(this).offset().top - $(window).height() / 1.5;
+				var bottom_of_window = $(window).scrollTop();
 				if( bottom_of_window > bottom_of_object ){
-					$(this).animate({'opacity':'1','margin-top':'0%'},1000);  
+					$(this).animate({'opacity':'1','margin-top':'20%'},1000);  
 				}            
 			}); 
 		} 
-		else if ($(window).width() <= 320) {  
+		else if ($(window).width() <= 768) {  
 			$('.mags').each( function(i){
 				var bottom_of_object = $(this).offset().top - $(window).height() / 1.5;
 				var bottom_of_window = $(window).scrollTop();
@@ -113,19 +113,6 @@ $(document).ready(function () {
 	});
 });
 
-/*
-	function scroll() {
-		if ($(window).width() <= 320) {
-			if ($(window).scrollTop() >= $('.menu').offset().top) {
-				$('.gototop').animate({'opacity':'1'},1000);  
-			} else {
-				$('.gototop').animate({'opacity':'0'},1000);  
-			}
-		}
-	}
-	document.onscroll = scroll;
-});
-*/
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
