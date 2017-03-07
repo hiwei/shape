@@ -2,9 +2,9 @@
 <html>
 <script src="jquery.min.js"></script>
 <script src="smooth.js"></script>
-<link rel="stylesheet" type="text/css" media="not screen and (max-width: 1024px)" href="style.css">
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 768px)" href="style_768.css" />
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 769px) and (max-width: 1024px)" href="style_1024.css" />
+<link rel="stylesheet" type="text/css" media="not screen and (max-width: 768px)" href="style.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 480px)" href="style_480.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 768px)" href="style_768.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 <div class="landing">
@@ -83,7 +83,7 @@ $(document).ready(function () {
             }            
         }); 
 
-		if ($(window).width() > 1024) { 		
+		if ($(window).width() > 768) { 		
 			$('.mags').each( function(i){
 				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-200;
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -92,7 +92,7 @@ $(document).ready(function () {
 				}            
 			}); 
 		}  
-		else if ( $(window).width() <= 1024 && $(window).width() > 769) {  
+		else if ( $(window).width() <= 768 && $(window).width() > 481) {  
 			$('.mags').each( function(i){
 				var bottom_of_object = $(this).offset().top - $(window).height() / 1.5;
 				var bottom_of_window = $(window).scrollTop();
@@ -101,7 +101,7 @@ $(document).ready(function () {
 				}            
 			}); 
 		} 
-		else if ($(window).width() <= 768) {  
+		else if ($(window).width() <= 480) {  
 			$('.mags').each( function(i){
 				var bottom_of_object = $(this).offset().top - $(window).height() / 1.5;
 				var bottom_of_window = $(window).scrollTop();
