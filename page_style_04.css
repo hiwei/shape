@@ -1,75 +1,84 @@
 .float_img1 {
 	display: block;
 	margin-top: 60%;
-	margin-left: 48%; 
-	max-height: 400px;
-	max-width: 100%;
+	float: right;
+	margin-right: 16%; 
+	width: 30%;
 }
 .float_img2 {
 	display: block;
-	margin-top: 50%;
-	margin-left: 18%; 
-	max-height: 450px;
-	max-width: 100%;
+	margin-top: 110%;
+	float: left;
+	margin-left: 8%; 
+	width: 26%;
 }
 .float_img3 {
 	display: block;
-	margin-top: 50%;
-	margin-left: 30%; 
-	max-height: 420px;
-	max-width: 100%;
+	margin-top: 100%;
+	float: right;
+	margin-right: 22%; 
+	width: 29%;
 }
 .float_img4 {
 	display: block;
-	margin-top: 100%;
-	margin-left: 20%; 
-	max-height: 450px;
-	max-width: 100%;
+	margin-top: 170%;
+	float: left;
+	margin-left: 12%; 
+	width: 32%;
 }
 .float_img5 {
 	display: block;
-	margin-top: 50%;
-	margin-left: 60%; 
-	max-height: 340px;
-	max-width: 100%;
+	margin-top: 180%;
+	float: right;
+	margin-right: 13%; 
+	width: 29%;
 }
 .float_img6 {
-	margin-top: 50%;
-	margin-left: 42%; 
-	max-height: 500px;
-	max-width: 100%;
-}
-.float_img7 {
-	margin-top: 50%;
-	margin-left: 55%; 
-	max-height: 420px;
-	max-width: 100%;
-}
-.float_img8 {
-	margin-top: 50%;
-	margin-left: 22%; 
-	max-height: 500px;
-	max-width: 100%;
-}
-.float_img9 {
-	margin-top: 50%;
-	margin-left: 48%; 
-	max-height: 500px;
-	max-width: 100%;
-}
-.float_img10 {
-	margin-top: 100%;
-	margin-left: 28%; 
-	max-height: 500px;
-	max-width: 100%;
-}
-.float_text1 {
-	margin-top: 50%;
-	margin-left: 45%; 
+	display: block;
+	margin-top: 130%;
+	float: left;
+	margin-left: 17%; 
 	width: 30%;
 }
+.float_img7 {
+	display: block;
+	margin-top: 150%;
+	float: right;
+	margin-right: 10%; 
+	width: 26%;
+}
+.float_img8 {
+	display: block;
+	margin-top: 120%;
+	float: left;
+	margin-left: 11%; 
+	width: 31%;
+}
+.float_img9 {
+	display: block;
+	margin-top: 120%;
+	float: right;
+	margin-right: 20%; 
+	width: 33%;
+}
+.float_img10 {
+	display: block;
+	margin-top: 200%;
+	float: left;
+	margin-left: 14%; 
+	width: 30%;
+}
+.float_text1 {
+	display: block;
+	margin-top: 250%;
+	float: left;
+	margin-left: 8%; 
+	width: 33%;
+}
 .float_text2 {
-	margin-top: 50%;
-	margin-left: 20%; 
-	width: 18%;
+	display: block;
+	margin-top: 780%;
+	float: left;
+	margin-left: 30%;  
+	width: 22%;
 }
