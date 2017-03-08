@@ -30,14 +30,11 @@ body {
 	font-size: 1.5rem;
 }
 .num_link {
-//	position: absolute;
-	margin-left: 27%;
+	margin-left: 30%;
 }
 .menu_logo {
-//	z-index: 999;
-//	position: absolute;
 	height: 50%;
-	margin-left: -5%;
+	margin-left: 0%;
 }
 .menu_logo:hover {
 	cursor: pointer;
