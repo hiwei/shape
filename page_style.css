@@ -58,7 +58,7 @@ body {
 	width: 80vh;
 	height: 100%;
 }
- .change_bg1, .change_bg2, .change_bg3, .change_bg4 {
+.change_bg1, .change_bg2, .change_bg3, .change_bg4 {
 	top: 20%;
 	position: absolute;
 	z-index: 3;
