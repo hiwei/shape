@@ -1,144 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-body {
-    margin: 0;
-    padding: 0;
-	overflow-x: hidden;
-	width: 100%;
-}
-.menu {
-    position: fixed! important;
-	background: #fff;
-	box-shadow: 0px 2px 15px #eee;
-	height: 10%;
-    color:#555;
-    letter-spacing:1px;
-    width:100%;
-	z-index: 999;
-	position: absolute;
-	top: 0;
-	left: 0; 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #555;
-	font-family : Montserrat;
-	font-size: 1.5rem;
-}
-.num_link {
-	position: absolute;
-	margin-left: 15%;
-}
-.menu_logo {
-	z-index:999;
-	position: absolute;
-	height: 50%;
-	margin-left: -20%;
-}
-.menu_logo:hover {
-	cursor: pointer;
-}
-.content {
-	z-index: 1;
-	position: absolute;
-	top: 0%;
-	left: 0; 
-    position: fixed;
-	background: none;
-	width: 100%;
-	height: 100%;
+.float_img1 {
 	display: block;
+	margin-top: 60%;
+	margin-left: 20%; 
+	max-height: 400px;
+	max-width: 100%;
 }
-.content div{
-	margin: auto;
-	width: 800px;
-	height: 20%;
+.float_img2 {
+	display: block;
+	margin-top: 50%;
+	margin-left: 55%; 
+	max-height: 500px;
+	max-width: 100%;
 }
- .change_bg1, .change_bg2, .change_bg3, .change_bg4 {
-	top: 20%;
-	position: absolute;
-	z-index: 3;
-	width: 800px;
+.float_img3 {
+	display: block;
+	margin-top: 50%;
+	margin-left: 15%; 
+	max-height: 400px;
+	max-width: 100%;
 }
-.float_img {
-	z-index: 2;
-	position: absolute;
-	top: 0;
-	left: 0;
+.float_img4 {
+	display: block;
+	margin-top: 100%;
+	margin-left: 60%; 
+	max-height: 350px;
+	max-width: 100%;
 }
-.img_shadow {
-	box-shadow: 0px 0px 20px #ddd;
+.float_img5 {
+	display: block;
+	margin-top: 50%;
+	margin-left: 40%; 
+	max-height: 280px;
+	max-width: 100%;
 }
-.float_text {
-	position: absolute;
-	z-index: 2;
-	background: #fff;
-	font-family : Quicksand;
-	font-size: 1.5rem;
-	padding: 20px;
+.float_img6 {
+	margin-top: 50%;
+	margin-left: 12%; 
+	max-height: 500px;
+	max-width: 100%;
 }
-.float_text_bold {
-	font-weight: 700;
-	font-size: 2rem;
-	letter-spacing: 0.2rem;
+.float_img7 {
+	margin-top: 50%;
+	margin-left: 55%; 
+	max-height: 380px;
+	max-width: 100%;
 }
-.float_bottom {
-	position: absolute;
-	z-index: 2;
-	width: 100px;
-	height: 12%;
-	background: none;
+.float_img8 {
+	margin-top: 50%;
+	margin-left: 22%; 
+	max-height: 300px;
+	max-width: 100%;
 }
-.price_text {
-    opacity: 0;
-	color: #000;
-	position: absolute;
-	position: fixed;
-	width: 100%;
-	bottom: 13%;
-	text-align: center;
-	font-family : Quicksand;
-	font-size: 2rem;
-	letter-spacing: 0.2rem;
-	z-index: 1;
+.float_img9 {
+	margin-top: 50%;
+	margin-left: 48%; 
+	max-height: 500px;
+	max-width: 100%;
 }
-.to_top {
-    opacity: 0;
-	position: absolute;
-	position: fixed;
-	width: 100%;
-	bottom: 6%;
-	text-align: center;
-	font-family : Quicksand;
-	font-weight: 700;
-	color: #ddd;
-	font-size: 2.5rem;
-	z-index: 2;
+.float_img10 {
+	margin-top: 100%;
+	margin-left: 28%; 
+	max-height: 450px;
+	max-width: 100%;
 }
-.to_top span, .num_link span, .num_link a {
-	-webkit-transition: color .5s;
-	-moz-transition: color .5s;
-	-o-transition: color .5s;
-	transition: color .5s;
+.float_text1 {
+	margin-top: 50%;
+	margin-left: 45%; 
+	width: 30%;
 }
-.to_top span:hover {
-	cursor: pointer;
-	color: #555;
-}
-.num_link span:hover {
-	cursor: pointer;
-	color: #aaa;
-}
-.num_link a {
-	text-decoration: none;
-	color: #555;
-	-webkit-transition: color .5s;
-	-moz-transition: color .5s;
-	-o-transition: color .5s;
-	transition: color .5s;
-}
-.num_link a:hover {
-	cursor: pointer;
-	color: #aaa;
+.float_text2 {
+	margin-top: 50%;
+	margin-left: 20%; 
+	width: 18%;
 }
