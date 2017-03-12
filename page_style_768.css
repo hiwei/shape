@@ -45,7 +45,7 @@ body {
 	font-size: 1.5rem;
 	margin: auto;
 	position: absolute;
-	height: 1.8rem;
+	height: 1.5rem;
 	float: right;
 	right: 10%;
 	top: 0;
@@ -62,6 +62,7 @@ body {
 	top: 0;
 	bottom: 0;
 	margin-left: 10%;
+	transition: height .5s;
 }
 .menu_logo:hover {
 	cursor: pointer;
